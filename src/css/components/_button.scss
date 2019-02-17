@@ -1,4 +1,24 @@
 .green-button {
+  display: grid;
   background: green;
   color: white;
+  grid-template: 100px 1fr/ 200px 1fr;
+  grid-template-areas: 
+    "hoge fuga"
+    "piyo section"
+}
+.hoge {
+  grid-area: hoge;
+}
+
+.fuga {
+  grid-area: fuga;
+}
+
+.piyo {
+  grid-area: piyo;
+}
+
+.section {
+  grid-area: section;
 }
